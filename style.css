@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@200&family=Roboto:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #f0f0f0;
+}
+
+@media (max-width: 500px) {
+  body {
+    flex-wrap: 500px;
+  }
+}
+h1,
+h2 {
+  font-family: 'Roboto', sans-serif ;
+  font-weight: 700;
+  text-align: center;
+}
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+/* navbar */
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height: 19px;
+  padding: 23px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #112D4E;
+  z-index: 1;
+}
+
+a {
+  color: #f0f0f0;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+ }
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-list a {
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  transition: all .2s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: #72A0C1;
+  transition: all .2s ease-in-out;
+}
+/* end of navbar */
+
+/*welcome section */
+.welcome-section {
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(50deg, #0039a6 0%, #318CE7 100%);
+}
+
+.welcome-section p {
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-column-gap: 10px;
+  column-gap: 10px;
+  margin-top: 10px;
+}
+
+i {
+  font-size: 3em;
+}
+
+.social figcaption {
+  text-align: center;
+}
+
+.github {
+  margin-right: 20px;
+}
+
+.linkedin {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social a {
+  transition: all .2s;
+}
+
+.social a:hover {
+  color: #112D4E;
+  transition: all .2s ease-in-out;
+}
+/* end of welcome section */
+
+/* start of project section */
+.projects-section {
+  background: #1F305E;
+  padding: 7rem 2rem;
+  text-align: center;
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid #f0f0f0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+  border-radius: 0.3rem;
+  background: #383838;
+  transition: all 0.8s ease-in-out;
+  z-index: 0;
+}
+
+.project-image {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-family: 'Lato', sans serif;
+  font-size: 1.4rem;
+  padding: 2rem 0.5rem;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+}
+/* end of project section */
+
+/* start of contact section */
+.contact-section {
+  background: #353839;
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-section-header {
+  margin-top: 50px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.contact-details {
+  text-shadow: 2px 2px 1px #1f1f1f;
+  margin-
+}
+
+#social-1 {
+  margin-right: 20px;
+  position: relative;
+}
+
+#social-1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e5e5e5;
+  transform: scaleX(0);
+  transform-origin: middle;
+  transition: transform 0.3s ease;
+}
+
+#social-1:hover::after {
+  transform: scaleX(1);
+}
+
+#social-2 {
+  position: relative;
+}
+
+#social-2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e5e5e5;
+  transform: scaleX(0);
+  transform-origin: middle;
+  transition: transform 0.3s ease;
+}
+
+#social-2:hover::after {
+  transform: scaleX(1);
+}
